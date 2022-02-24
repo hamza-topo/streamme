@@ -1,0 +1,10 @@
+import popper from 'popper.js';
+window.popper = popper;
+window.jQuery = window.$ = require('./front/jquery');
+require('./front/bootstrap');
+require('./front/player');
+require('./front/nice-select');
+require('./front/mixitup');
+require('./front/slicknav');
+require('./front/owl-carousel');
+require('./front/main');
