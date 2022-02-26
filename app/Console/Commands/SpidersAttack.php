@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
+use App\Spiders\AnimeVostFrSpider;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
-use App\Spiders\TestSpider;
 use RoachPHP\Roach;
 
 
@@ -43,7 +43,7 @@ class SpidersAttack extends Command
     {
         try {
             Log::info('spider animedigitalnetwork ');
-            Roach::startSpider(TestSpider::class);
+            Roach::startSpider(AnimeVostFrSpider::class);
             Log::info('the job is done for animedigitalnetwork i can rest now');
         } catch (\Exception $e) {
         }

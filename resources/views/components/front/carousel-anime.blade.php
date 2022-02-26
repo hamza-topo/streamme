@@ -1,5 +1,5 @@
 @foreach($animes as $anime)
-<div class="hero__items" style="background-image: url('http://via.placeholder.com/300');">
+<div class="hero__items" style="background-image:url('https://api.lorem.space/image/game?w=150&h=220')">
     <div class="row">
         <div class="col-lg-6">
             <div class="hero__text">
