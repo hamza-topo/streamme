@@ -1343,7 +1343,7 @@ body {
 	height: 100%;
 	font-family: "Mulish", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background: #0b0c2a;
+	background: #161622;
 }
 
 h1,
@@ -1441,7 +1441,7 @@ ol {
 	top: -6px;
 	height: 32px;
 	width: 4px;
-	background: #e53637;
+	background: #66d7d3;
 	content: "";
 }
 
@@ -1490,7 +1490,7 @@ ol {
 .site-btn {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #66d7d3;
 	font-weight: 700;
 	border: none;
 	border-radius: 2px;
@@ -1648,7 +1648,7 @@ ol {
 }
 
 .header__menu ul li.active a {
-	background: #e53637;
+	background: #66d7d3;
 	color: #ffffff;
 }
 
@@ -1751,7 +1751,7 @@ ol {
 
 .hero__text .label {
 	font-size: 13px;
-	color: #e53637;
+	color: #66d7d3;
 	background: #ffffff;
 	padding: 5px 14px 3px;
 	display: inline-block;
@@ -1795,7 +1795,7 @@ ol {
 .hero__text a span {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #66d7d3;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -1808,7 +1808,7 @@ ol {
 .hero__text a i {
 	font-size: 20px;
 	display: inline-block;
-	background: #e53637;
+	background: #66d7d3;
 	padding: 11px 5px 16px 8px;
 	color: #ffffff;
 	border-radius: 0 4px 4px 0;
@@ -1942,7 +1942,7 @@ ol {
 .product__item__pic .ep {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #66d7d3;
 	display: inline-block;
 	padding: 2px 12px;
 	border-radius: 4px;
@@ -1973,6 +1973,7 @@ ol {
 	position: absolute;
 	right: 10px;
 	bottom: 10px;
+	cursor:pointer;
 }
 
 .product__item__text {
@@ -2016,7 +2017,7 @@ ol {
 	top: -6px;
 	height: 32px;
 	width: 4px;
-	background: #e53637;
+	background: #66d7d3;
 	content: "";
 }
 
@@ -2058,7 +2059,7 @@ ol {
 .product__sidebar__view__item .ep {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #66d7d3;
 	display: inline-block;
 	padding: 2px 12px;
 	border-radius: 4px;
@@ -2344,7 +2345,7 @@ ol {
 .anime__details__btn .follow-btn {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #66d7d3;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -2357,7 +2358,7 @@ ol {
 .anime__details__btn .watch-btn span {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #66d7d3;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -2370,7 +2371,7 @@ ol {
 .anime__details__btn .watch-btn i {
 	font-size: 20px;
 	display: inline-block;
-	background: #e53637;
+	background: #66d7d3;
 	padding: 11px 5px 16px 8px;
 	color: #ffffff;
 	border-radius: 0 4px 4px 0;
@@ -2450,7 +2451,7 @@ ol {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	background: #e53637;
+	background: #66d7d3;
 	border: none;
 	padding: 10px 15px;
 	border-radius: 2px;
@@ -2582,7 +2583,7 @@ ol {
 
 .breadcrumb__links a i {
 	margin-right: 5px;
-	color: #e53637;
+	color: #66d7d3;
 }
 
 .breadcrumb__links a:after {
@@ -2673,7 +2674,7 @@ ol {
 }
 
 .blog__item__text p span {
-	color: #e53637;
+	color: #66d7d3;
 	margin-right: 5px;
 }
 
@@ -2901,7 +2902,7 @@ ol {
 }
 
 .blog__details__comment__item__text a:hover {
-	background: #e53637;
+	background: #66d7d3;
 }
 
 .blog__details__form {
@@ -3067,7 +3068,7 @@ ol {
 }
 
 .login__register .primary-btn {
-	background: #e53637;
+	background: #66d7d3;
 	padding: 12px 42px;
 }
 
@@ -3150,7 +3151,7 @@ ol {
 }
 
 .signup .login__form h5 a {
-	color: #e53637;
+	color: #66d7d3;
 	font-weight: 700;
 }
 
@@ -3195,7 +3196,7 @@ ol {
 	color: #ffffff;
 	height: 50px;
 	width: 50px;
-	background: #e53637;
+	background: #66d7d3;
 	line-height: 50px;
 	text-align: center;
 	border-radius: 50%;
@@ -3236,7 +3237,7 @@ ol {
 }
 
 .footer__copyright__text a {
-	color: #e53637;
+	color: #66d7d3;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/

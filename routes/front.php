@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\Front\ContactController;
+use App\Http\Controllers\Front\DigitalMilliniumCopyrightController;
 use App\Http\Controllers\Front\HomeController;
+use App\Http\Controllers\Front\PrivacyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,14 +19,13 @@ use Illuminate\Support\Facades\Route;
 // 127.0.0.1 front.streame.loc
 // 127.0.0.1 app.stream.loc
 
-// Route::group(['domain' => env('FRONT_DOMAIN', 'front.streame.loc')],
-//     function () {
+Route::group(['domain' => env('FRONT_DOMAIN', 'front.streame.loc')],
+    function () {
+        Route::get('/', HomeController::class)->name('home');
+        Route::get('/privacy.html', PrivacyController::class)->name('privacy');
+        Route::get('/contact-us.html', ContactController::class)->name('contact');
+        Route::get('/dmca', DigitalMilliniumCopyrightController::class)->name('dmca');
+    }
+);
 
-//     }
-// );
 
-
-Route::get('/', function () {
-    return view('front.home');
-});
-Route::get('/', HomeController::class);

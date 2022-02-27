@@ -14,9 +14,9 @@
                     <ul>
                         <li class="active"><a href="./index.html">@lang('Accueil')</a></li>
                         <li><a href="#">@lang('Genres')</a></li>
-                        <li><a href="#">@lang('FAQ')</a></li>
-                        <li><a href="#">@lang('Privacy')</a></li>
-                        <li><a href="#">@lang('Contact')</a></li>
+                        <li><a href="{{route('dmca')}}">@lang('DMCA')</a></li>
+                        <li><a href="{{route('privacy')}}">@lang('Privacy')</a></li>
+                        <li><a href="{{route('contact')}}">@lang('Contact')</a></li>
                     </ul>
                 </div>
             </div>
