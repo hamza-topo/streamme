@@ -15,7 +15,11 @@ class Anime extends Model
       'slug',
       'quality',
       'description',
+      'show_in',
     ];
 
-    
+    protected $casts = [
+      'seo_content' => 'array',
+      'show_in' => 'array',
+  ];
 }

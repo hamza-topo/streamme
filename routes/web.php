@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Web\AnimeController;
 use App\Http\Controllers\Web\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['domain' => env('BACK_DOMAIN', 'app.streame.loc')],
     function () {
         Route::get('/',HomeController::class);
+        Route::get('/animes',AnimeController::class)->name('animes');
+        Route::get('/animes/create',[AnimeController::class,'create'])->name('animes.create');
     }
 );
 

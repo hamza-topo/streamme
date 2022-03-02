@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('quality')->nullable();
             $table->string('poster')->nullable();
             $table->text('description')->nullable();
+            $table->text('show_in')->nullable();
+            $table->text('seo_content')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
