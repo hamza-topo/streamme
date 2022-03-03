@@ -15,7 +15,10 @@ class Anime extends Model
       'slug',
       'quality',
       'description',
+      'poster',
       'show_in',
+      'status',
+      'published_at',
     ];
 
     protected $casts = [

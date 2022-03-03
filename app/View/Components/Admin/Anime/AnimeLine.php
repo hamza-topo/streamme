@@ -2,16 +2,17 @@
 
 namespace App\View\Components\Admin\Anime;
 
+use App\Models\Anime;
 use Illuminate\View\Component;
 
-class Detail extends Component
+class AnimeLine extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(public array $anime = [])
+    public function __construct(public Anime $anime)
     {
         //
     }
@@ -23,6 +24,6 @@ class Detail extends Component
      */
     public function render()
     {
-        return view('components.admin.anime.detail');
+        return view('components.admin.anime.anime-line');
     }
 }

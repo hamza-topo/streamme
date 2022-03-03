@@ -25,11 +25,13 @@ class AnimeService
     }
 
     public function all(): Collection
-    {
+    { 
         return Cache::remember(CacheTags::ALL_ANIMES, 240, function () {
             return   Anime::all();
         });
     }
+
+   
 
     public function forget(): bool {
         return Cache::forget(CacheTags::ALL_ANIMES);

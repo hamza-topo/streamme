@@ -58,16 +58,7 @@
                         </thead>
                         <tbody>
                             @foreach($animes as $anime)
-                            <tr>
-                                <td><img src='https://placeholder.com/'></td>
-                                <td>{{$anime->title}}</td>
-                                <td>2016</td>
-                                <td>Finished</td>
-                                <td>Action,Drama,Adventure..</td>
-                                <td>
-                                    <button>Modifier</button>
-                                </td>
-                            </tr>
+                             <x-admin.anime.anime-line :anime='$anime'></x-admin.anime.anime-line>
                             @endforeach
                         </tbody>
                     </table>

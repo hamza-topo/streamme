@@ -22,6 +22,8 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->text('show_in')->nullable();
             $table->text('seo_content')->nullable();
+            $table->tinyInteger('status')->comment('0:pending;1:finished');
+            $table->date('published_at');
             $table->softDeletes();
             $table->timestamps();
         });
