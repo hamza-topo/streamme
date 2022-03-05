@@ -16,19 +16,24 @@ class AnimeCreate extends Component
 
     public function save()
     {
-        // dd($this->anime['poster']->getClientOriginalName());
-        //TODO:mediable and morphable categories  and validation via traits will be good 
         try {
              $this->anime['poster'] = $this->anime['poster']->storeAs('/', $this->anime['poster']->getClientOriginalName(),'public');
              $this->anime;
              $anime = AnimeFacade::save($this->anime);
              AnimeFacade::forget();
+             $this->clear();
              $this->alert('success', 'Anime: '.$anime['title'].' Created successfuly');
         } catch (\Exception $e) {
             $this->alert('warning', 'What are you trying to dos ?.'.$e->getMessage());
             dd($e->getMessage());
         }   
     }
+
+    public function clear(){
+        $this->reset(['anime']);
+        $this->emit('succes');
+    }
+
     public function render()
     {
         return view('livewire.admin.anime-create');

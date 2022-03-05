@@ -1,6 +1,6 @@
 <div class="user-bg">
    <div>
-       <img width="100%" alt="user" src=" {{  !empty($anime['poster']) ? $anime['poster']?->temporaryUrl()  : '' }} ">
+       <img width="100%" alt="user" src=" {{  !empty($anime['poster']) ? $anime['poster']?->temporaryUrl()  : 'https://via.placeholder.com/350x400' }} ">
    </div>
 </div>
 <div class="user-btm-box">

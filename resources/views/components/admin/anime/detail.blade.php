@@ -6,15 +6,15 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="example-email" class="col-md-12">@lang('Slug')</label>
+        <label for="example-email" class="col-md-12">@lang('Quality')</label>
         <div class="col-md-12">
-            <input type="text" placeholder="my-anime" class="form-control form-control-line" wire:model.lazy='anime.slug' disabled>
+            <input type="text" placeholder="HD" class="form-control form-control-line" wire:model.lazy='anime.quality'>
         </div>
     </div>
     <div class="form-group">
         <label for="example-email" class="col-md-12">@lang('Published at')</label>
         <div class="col-md-12">
-            <input type="date"  class="form-control form-control-line" wire:model.lazy='anime.published_at'>
+            <input type="date" class="form-control form-control-line" wire:model.lazy='anime.published_at'>
         </div>
     </div>
     <div class="form-group">
@@ -24,13 +24,12 @@
         </div>
     </div>
     <div class="form-group">
-    //TODO:use Enum for status
         <label class="col-sm-12">@lang('Status')</label>
         <div class="col-sm-12">
-            <select  class="form-control form-control-line" wire:model.lazy='anime.status'>
+            <select class="form-control form-control-line" wire:model.lazy='anime.status'>
                 <option>@lang('Choose de status of anime')</option>
-                <option value="0">Pending</option>
-                <option value="1">Finished</option>
+                <option value="{{ App\Enums\AnimeStatus::PENDING }}">@lang('Pending')</option>
+                <option value="{{ App\Enums\AnimeStatus::FINISHED }}">@lang('Finished')</option>
             </select>
         </div>
     </div>

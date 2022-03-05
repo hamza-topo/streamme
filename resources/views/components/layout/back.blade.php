@@ -15,8 +15,9 @@
 </head>
 
 <body class="fix-header">
-
     <div id="wrapper">
+    <livewire:tools.modal></livewire:tools.modal>
+
         <x-admin.side-bar.nav-bar></x-admin.side-bar.nav-bar>
         <!-- End Top Navigation -->
         <x-admin.side-bar.side-bar></x-admin.side-bar.side-bar>
@@ -27,9 +28,6 @@
         </div>
     </div>
     @livewireScripts
-    <script src="{{ asset('vendor/livewire-alert/livewire-alert.js') }}"></script>
-    <x-livewire-alert::flash />
     {{$scripts}}
 </body>
-
-</html>
+    </html>

@@ -1,10 +1,11 @@
 <tr>
-    <td><img width="75" height="75" src='{{asset('/storage/'.$anime->poster)}}'></td>
+    <td><img width="25" height="25" src='{{asset('/storage/'.$anime->poster)}}'></td>
     <td>{{$anime->title}}</td>
     <td>{{$anime->published_at}}</td>
-    <td>{{$anime->status}}</td>
+    <td>{{$anime->status == 0 ? 'Pending' : 'Finished'}}</td>
+    <td>{{$anime->quality}}</td>
     <td>{{$anime->categories}}</td>
     <td>
-        <button>Modifier</button>
+        <button>@lang('Modifier')</button>
     </td>
 </tr>
