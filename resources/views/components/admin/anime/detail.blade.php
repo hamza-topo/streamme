@@ -60,7 +60,12 @@
     </div>
     <div class="form-group">
         <div class="col-sm-12">
-            <button wire:click='save()' class="btn btn-success">@lang('Save')</button>
+            <div class="col-sm-6">
+                <button wire:click='save()' class="btn btn-danger">@lang('Delete')</button>
+            </div>
+            <div class="col-sm-6">
+                <button wire:click='save()' class="btn btn-success">@lang('Update')</button>
+            </div>
         </div>
     </div>
 </div>

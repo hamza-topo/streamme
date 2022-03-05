@@ -20,6 +20,7 @@ Route::group(['domain' => env('BACK_DOMAIN', 'app.streame.loc')],
         Route::get('/',HomeController::class);
         Route::get('/animes',AnimeController::class)->name('animes');
         Route::get('/animes/create',[AnimeController::class,'create'])->name('animes.create');
+        Route::get('/animes/{id}/edit',[AnimeController::class,'edit'])->name('animes.edit');
     }
 );
 

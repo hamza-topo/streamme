@@ -9,7 +9,6 @@ use Livewire\WithFileUploads;
 
 class AnimeCreate extends Component
 {
-    use LivewireAlert;
     use WithFileUploads;
     public array $anime = [];
 
@@ -17,14 +16,15 @@ class AnimeCreate extends Component
     public function save()
     {
         try {
-             $this->anime['poster'] = $this->anime['poster']->storeAs('/', $this->anime['poster']->getClientOriginalName(),'public');
-             $this->anime;
+            if(method_exists($this->anime['poster'],'temporaryUrl'))
+             $this->anime['poster'] = $this->anime['poster']
+                                           ->storeAs('/', $this->anime['poster']->getClientOriginalName(),'public');
              $anime = AnimeFacade::save($this->anime);
              AnimeFacade::forget();
              $this->clear();
-             $this->alert('success', 'Anime: '.$anime['title'].' Created successfuly');
+            //  $this->alert('success', 'Anime: '.$anime['title'].' Created successfuly');
         } catch (\Exception $e) {
-            $this->alert('warning', 'What are you trying to dos ?.'.$e->getMessage());
+            // $this->alert('warning', 'What are you trying to dos ?.'.$e->getMessage());
             dd($e->getMessage());
         }   
     }

@@ -23,4 +23,11 @@ class AnimeController extends Controller
     {
         return view('back.animes.create');
     }
+
+    public function edit(int $id){
+
+        return view('back.animes.edit',[
+            'anime'=>$this->animeService->find($id)
+        ]);
+    }
 }

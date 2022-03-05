@@ -16,6 +16,7 @@ class Anime extends Model
       'quality',
       'description',
       'poster',
+      'seo_content',
       'show_in',
       'status',
       'published_at',

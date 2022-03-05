@@ -6,6 +6,6 @@
     <td>{{$anime->quality}}</td>
     <td>{{$anime->categories}}</td>
     <td>
-        <button>@lang('Modifier')</button>
+        <a href="{{route('animes.edit',$anime->id)}}" class="btn btn-primary">@lang('Modifier')</a>
     </td>
 </tr>
