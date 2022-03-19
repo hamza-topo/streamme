@@ -12,7 +12,7 @@
     <div class="container-fluid">
         <div class="row bg-title">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <h4 class="page-title">@lang('Animes')</h4>
+                <h4 class="page-title">@lang('Categories')</h4>
             </div>
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <ol class="breadcrumb">
@@ -27,9 +27,9 @@
     <div class="row" style="margin-left: 0px;margin-right: 0px">
         <div class="col-sm-12">
             <div class="white-box">
-                <h3 class="box-title">Anime List</h3>
+                <h3 class="box-title">@lang('Catgeories List')</h3>
                 <div class="row">
-                    <a href="{{route('animes.create')}}"  class="btn btn-primary pull-left m-l-20 hidden-xs hidden-sm waves-effect waves-light">
+                    <a href="{{route('categories.create')}}"  class="btn btn-primary pull-left m-l-20 hidden-xs hidden-sm waves-effect waves-light">
                         @lang('New')
                     </a>
                 </div>
@@ -37,23 +37,20 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>@lang('Poster')</th>
-                                <th>@lang('Titre')</th>
-                                <th>@lang('Date')</th>
-                                <th>@lang('status')</th>
-                                <th>@lang('Quality')</th>
-                                <th>@lang('Genre')</th>
+                                <th>@lang('name')</th>
+                                <th>@lang('number of animes')</th>
                                 <th>@lang('Action')</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($animes as $anime)
-                             <x-admin.anime.anime-line :anime='$anime'></x-admin.anime.anime-line>
+                            @foreach($categories as $category)
+                             <x-admin.category.category-line :category='$category'></x-admin.category.category-line>
                             @endforeach
+  
                         </tbody>
                     </table>
                 </div>
-                {{$animes->links()}}
+                {{-- $categories->links() --}}
             </div>
         </div>
     </div>

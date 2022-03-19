@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row bg-title">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <h4 class="page-title">@lang('Modifier Anime') : {{ $anime->title }}</h4>
+                <h4 class="page-title">@lang('New Anime')</h4>
             </div>
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <ol class="breadcrumb">
@@ -23,8 +23,7 @@
                 </ol>
             </div>
         </div>
-        <livewire:admin.anime-edit :anime='$anime->toArray()' />
-
+        <livewire:admin.category-edit :category='$category->toArray()' />
     </div>
     <x-slot name='scripts'>
         <script src="{{asset('plugins/bower_components/jquery/dist/jquery.min.js')}}"></script>

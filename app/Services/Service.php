@@ -12,6 +12,8 @@ interface Service {
 
     public function delete(int $id);
 
+    public function restore(int $id);
+
     public function all();
 
     public function forget();

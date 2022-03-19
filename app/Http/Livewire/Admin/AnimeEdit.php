@@ -28,6 +28,16 @@ class AnimeEdit extends Component
         }
     }
 
+    public function delete(){
+        try {
+            $anime = AnimeFacade::delete($this->anime['id']);
+            AnimeFacade::forget();
+            $this->clear();
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
+    }
+
     public function clear()
     {
         $this->emit('succes');

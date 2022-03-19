@@ -22,9 +22,7 @@ class AnimeCreate extends Component
              $anime = AnimeFacade::save($this->anime);
              AnimeFacade::forget();
              $this->clear();
-            //  $this->alert('success', 'Anime: '.$anime['title'].' Created successfuly');
         } catch (\Exception $e) {
-            // $this->alert('warning', 'What are you trying to dos ?.'.$e->getMessage());
             dd($e->getMessage());
         }   
     }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Web\AnimeController;
+use App\Http\Controllers\Web\CategoryController;
 use App\Http\Controllers\Web\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,10 @@ Route::group(['domain' => env('BACK_DOMAIN', 'app.streame.loc')],
         Route::get('/animes',AnimeController::class)->name('animes');
         Route::get('/animes/create',[AnimeController::class,'create'])->name('animes.create');
         Route::get('/animes/{id}/edit',[AnimeController::class,'edit'])->name('animes.edit');
+   
+        Route::get('/categories',CategoryController::class)->name('categories');
+        Route::get('/category/create',[CategoryController::class,'create'])->name('categories.create');
+        Route::get('/category/{id}/edit',[CategoryController::class,'edit'])->name('categories.edit');
     }
 );
 

@@ -42,6 +42,11 @@ class AnimeService implements Service
         return $this->find($id)->destroy($id);
     }
 
+    public function restore(int $id): bool
+    {
+        return $this->find($id)->restore();
+    }
+
     public function all(): LengthAwarePaginator
     {
         return Cache::remember(CacheTags::ALL_ANIMES, 240, function () {

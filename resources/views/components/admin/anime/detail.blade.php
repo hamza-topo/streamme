@@ -60,12 +60,18 @@
     </div>
     <div class="form-group">
         <div class="col-sm-12">
+            @if(isset($anime['id']) && !empty($anime['id']))
             <div class="col-sm-6">
-                <button wire:click='save()' class="btn btn-danger">@lang('Delete')</button>
+                <button wire:click='delete()' class="btn btn-danger">@lang('Delete')</button>
             </div>
             <div class="col-sm-6">
                 <button wire:click='save()' class="btn btn-success">@lang('Update')</button>
             </div>
+            @else 
+            <div class="col-sm-6">
+                <button wire:click='save()' class="btn btn-success">@lang('Save')</button>
+            </div>
+            @endif
         </div>
     </div>
 </div>

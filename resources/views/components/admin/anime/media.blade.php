@@ -1,10 +1,12 @@
 <div class="user-bg">
    <div>
-       @if(method_exists($anime['poster'],'temporaryUrl'))
-       <img width="100%" alt="user" src=" {{  !empty($anime['poster']) ? $anime['poster']?->temporaryUrl()  : 'https://via.placeholder.com/350x400' }} ">
-       @else 
-       <img width="100%" alt="user" src=" {{  !empty($anime['poster']) ? asset('/storage/'.$anime['poster'])  : 'https://via.placeholder.com/350x400' }} ">
-       @endif
+       {{--@if(!empty($anime))
+            @if( method_exists($anime['poster'],'temporaryUrl'))
+            <img width="100%" alt="user" src=" {{  !empty($anime['poster']) ? $anime['poster']?->temporaryUrl()  : 'https://via.placeholder.com/350x400' }} ">
+            @else 
+            <img width="100%" alt="user" src=" {{  !empty($anime['poster']) ? asset('/storage/'.$anime['poster'])  : 'https://via.placeholder.com/350x400' }} ">
+            @endif
+       @endif--}}
     </div>
 </div>
 <div class="user-btm-box">
